@@ -371,7 +371,7 @@ public final class Launcher {
         c.gridy++; c.insets = new Insets(0, 0, 16, 0); side.add(sideInfoCard(), c);
         c.gridy++; c.weighty = 1; c.fill = GridBagConstraints.BOTH; c.insets = new Insets(0, 0, 0, 0); side.add(transparent(), c);
         JPanel footer = transparent(new GridLayout(2, 1, 0, 5));
-        footer.add(label("HDSL Desktop 0.6.0", 11, Font.PLAIN, new Color(119, 133, 153)));
+        footer.add(label("HDSL Desktop 0.1", 11, Font.PLAIN, new Color(119, 133, 153)));
         footer.add(label("●  " + tr("ready"), 11, Font.PLAIN, GREEN));
         c.gridy++; c.weighty = 0; c.fill = GridBagConstraints.HORIZONTAL; side.add(footer, c);
         return side;
