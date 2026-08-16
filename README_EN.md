@@ -35,6 +35,10 @@
 - **💾 Portable data layout**: config / plugins / background / backups / data / logs / cache / runtimes / tools / instances all live beside the executable — copy the folder and it just works
 - **🌏 Bilingual UI**: built-in Chinese / English texts
 
+## 📸 Preview
+
+![HDSL main UI preview](assets/preview.png)
+
 ## Quick start
 
 ### Users: download

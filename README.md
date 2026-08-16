@@ -35,6 +35,10 @@
 - **💾 便携式数据布局**：config / plugins / background / backups / data / logs / cache / runtimes / tools / instances 全部存放在程序同级目录，拷贝即用
 - **🌏 中英双语界面**：内置中文 / English 文案
 
+## 📸 界面预览
+
+![HDSL 主界面预览](assets/preview.png)
+
 ## 快速开始
 
 ### 用户：直接下载
