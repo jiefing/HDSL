@@ -1,0 +1,12 @@
+﻿# Build output
+build/
+build-*/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Logs
+*.log
