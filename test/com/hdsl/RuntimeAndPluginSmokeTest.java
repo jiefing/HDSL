@@ -19,7 +19,7 @@ public final class RuntimeAndPluginSmokeTest {
     }
 
     private static void testInstanceConstructorsAndPortAllocation() throws Exception {
-        // 5-arg constructor (backward compatibility with 0.5.0 tests)
+        // 5-arg constructor (backward compatibility with earlier tests)
         Class<?> instanceType = Class.forName("com.hdsl.Launcher$Instance");
         Constructor<?> constructor5 = instanceType.getDeclaredConstructor(String.class, String.class, String.class, String.class, String.class);
         constructor5.setAccessible(true);

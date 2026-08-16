@@ -1,4 +1,4 @@
-﻿<p align="center">
+<p align="center">
   <img src="assets/hero-banner-v1.png" alt="HDSL hero banner" width="100%">
 </p>
 
@@ -83,14 +83,14 @@ Run the smoke tests:
 
 ### v0.1 (2026-08-17) — first public source release
 
-Corresponds to internal build 0.6.0:
+This release includes:
 
 - Unique loopback port per instance, with automatic migration of legacy records
 - Runtime state polling that never blocks the UI; PID + port + workspace ownership verification
 - Full process-tree termination on stop (Windows / Linux)
 - Instant plugin cache with background refresh
 - Plugin search and official-plugin filter
-- Self-contained, version-isolated portable architecture (since internal 0.5.0)
+- Self-contained, version-isolated portable architecture
 
 ## Community & feedback
 
