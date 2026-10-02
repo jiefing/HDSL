@@ -2,9 +2,26 @@
 
 **HDSL 0.2.0**
 
-[下载 Windows x64 便携包及源码](https://github.com/jiefing/HDSL/releases/tag/v0.2.0)。解压后运行 `HDSL.exe`，请保留整个目录。
-
 用于 Windows 的 DeepSeek Harness 启动器。新版直接移植并适配 HMCL 的 JavaFX 窗口框架、侧栏、列表控件和首页启动区域，接入 Harness 实例、运行时、整合包、插件及任务管理。
+
+## 下载与运行
+
+**普通用户（Windows 64 位）只需下载：[HDSL-0.2.0-windows-x64.zip](https://github.com/jiefing/HDSL/releases/download/v0.2.0/HDSL-0.2.0-windows-x64.zip)。**
+
+1. 下载上述 ZIP，完整解压到一个文件夹。
+2. 打开解压后的 `HDSL` 文件夹，双击 `HDSL.exe`。
+
+请先解压后运行，并保留整个文件夹中的文件。运行环境已随包附带，无需另装 Java、Node 或 pnpm；Harness 和所选插件会在使用时按需联网下载。
+
+[发行页面（Releases）](https://github.com/jiefing/HDSL/releases/tag/v0.2.0) 中的文件用途如下：
+
+| 文件 | 用途 | 运行启动器是否需要下载 |
+| --- | --- | --- |
+| **`HDSL-0.2.0-windows-x64.zip`** | **Windows 64 位启动器程序** | **需要，普通用户选这一项** |
+| `hdsl-0.2.0-source.zip` | HDSL 源码，供开发和自行编译 | 不需要 |
+| 以 `OpenJDK` 或 `OpenJFX` 开头的 `.tar.gz` | 随包运行环境与界面库的源码，供查阅、开发及再分发 | 不需要 |
+| `Source code (zip)`、`Source code (tar.gz)` | GitHub 自动生成的仓库源码 | 不需要 |
+| 以 `.sha256` 结尾的文件 | 用于核对下载文件是否完整 | 可选 |
 
 ![HDSL 预览](assets/preview-v02.png)
 
@@ -46,7 +63,7 @@
 - 账户绑定使用临时启动配置适配已支持的 Harness 结构；未知结构会明确报错。独立桌面应用的账户与插件由其自身管理，HDSL 不自动向它们注入账户。
 - 话题标签不代表项目可直接安装；未确认发布包的项目只提供查看入口。目录核验不等同于插件功能测试。
 
-## 构建
+## 从源码构建（开发者）
 
 需要 JDK 21 或更新版本。在 PowerShell 中运行：
 
