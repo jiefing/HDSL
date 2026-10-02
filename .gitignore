@@ -10,3 +10,12 @@ build-*/
 
 # Logs
 *.log
+
+# Local research checkouts (independent Git repositories)
+/_references/
+/target/
+/target-*/
+/.build-tools/
+/dist/
+/.test-data/
+/.run-data/

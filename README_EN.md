@@ -1,107 +1,38 @@
-<p align="center">
-  <img src="assets/hero-banner-v1.png" alt="HDSL hero banner" width="100%">
-</p>
+# HDSL — Hello DeepSeek Harness Launcher
 
-<h1 align="center">HDSL · hello deepseek harness launcher</h1>
+Version **0.2.0-preview.5** is a prerelease.
 
-<p align="center"><b>Manage DeepSeek Harness instances like a Minecraft launcher</b><br>
-<em>像Minecraft 启动器一样管理DeepSeek Harness实例</em></p>
+[Download the Windows x64 portable package and source](https://github.com/jiefing/HDSL/releases/tag/v0.2.0-preview.5). Extract the archive and run `HDSL.exe`; keep the full directory together.
 
-<p align="center">
-  <a href="README.md">简体中文</a> | <b>English</b>
-</p>
+A Windows launcher with a JavaFX interface ported and adapted from HMCL, isolated Harness instances, exact runtime versions, plugin management, task logs, and PackForge/Overture pack import. The port includes the window frame, sidebar, list controls, and home launch area.
 
-<p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1-4d6bfe?style=flat-square">
-  <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux-4d6bfe?style=flat-square">
-  <img alt="Status" src="https://img.shields.io/badge/status-public%20beta-7da1de?style=flat-square">
-  <a href="https://github.com/deepseek-ai/deepseek-harness"><img alt="DSH" src="https://img.shields.io/badge/DSH-DeepSeek%20Harness-5B4CF0?style=flat-square"></a>
-  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow?style=flat-square"></a>
-  <img alt="topic" src="https://img.shields.io/badge/topic-dsh--plugin-0b7285?style=flat-square">
-</p>
+- The sidebar groups accounts, instances, and general tools. API Key accounts are encrypted with Windows DPAPI for the current user and can be assigned to HDSL instances. Saving an account does not test the API or send a billable request; changes take effect on the next launch.
+- Runtime support is based on actual CLI help and local capability declarations. Breaking changes in future Harness or Node versions may still require updates.
+- Changing a runtime version copies the selected profile into a new instance and retains the original.
+- Pack export is for sharing. Credentials, sessions, private settings, and patch configuration are excluded; they must be configured again after import.
+- External plugin and pack install scripts are disabled by default.
+- Opening Create Instance refreshes the Harness version list in the background. You can continue typing or creating the instance; a failed refresh retains your input and the known versions.
+- Choose from five built-in whale-girl backgrounds in Settings, or keep a custom local image. A matching chibi avatar and HDSL icon are included.
+- Search the [dsh-plugin topic](https://github.com/topics/dsh-plugin), then check a project's declared packages against npm publications. Only confirmed targets receive an install action; other repositories remain view-only. This metadata check does not test plugin functionality.
+- Query Windows x64 desktop installers from the [official DeepSeek download page](https://www.deepseek.com/en/download/) by default, with two clearly named community sources also available. Downloads show byte progress and verify a published SHA-256 when available. Open the download folder and run the installer yourself.
 
-> HDSL gives DeepSeek Harness a native desktop experience: a real GUI window on launch (no browser, no local HTTP server required for the main UI). Manage runtimes, instances, plugins, themes, and backups from the GUI, and launch Harness with one click.
->
-> This is a community project and is not affiliated with DeepSeek.
+Run `HDSL.exe` from its complete portable folder. Configure a proxy such as `http://127.0.0.1:7890` if needed, open Create Instance, select or enter an exact Harness version, and launch it.
 
-## ✨ Features
+HDSL account binding uses temporary launch settings for supported Harness structures. Unknown structures produce a clear error. Independent desktop applications manage their own accounts and plugins; HDSL does not inject accounts into them.
 
-- **🗂️ Instance management**: create / duplicate / delete instances. Every instance gets a unique loopback web port (default 3080); legacy records migrate automatically and port conflicts are avoided
-- **⚙️ Runtime management**: installs the exact dsh version you choose (default 0.1.0-rc.6) on demand through the bundled Node / pnpm toolchain. Versions are isolated per runtime; no global npm installs
-- **🧩 Plugin management**: plugin inventories render instantly from a per-instance cache — ordinary navigation never invokes dsh. Search by ID / package name / version and one-click hide of official plugins (@deepseek-ai/*); filtering is view-only and never mutates the cache
-- **🚀 One-click start / stop**: launch instances from the GUI; stopping cleanly terminates the entire process tree (wrapper shells and child processes) on both Windows and Linux
-- **🛡️ Safe ownership verification**: PID + port + instance workspace ownership checks — an unrelated process merely occupying a port is reported as port occupied and is never killed
-- **🖼️ Themes & backgrounds**: pick a custom hero background, shown per instance
-- **💾 Portable data layout**: config / plugins / background / backups / data / logs / cache / runtimes / tools / instances all live beside the executable — copy the folder and it just works
-- **🌏 Bilingual UI**: built-in Chinese / English texts
+In Settings → Appearance, choose Clear Sky, Sea Breeze, Warm Afternoon, Moonlight, or First Snow, then save. Clear Sky is the default; existing custom image paths are retained. The new artwork was created with the built-in image generation tool. See the [artwork record](assets/artwork/README.md) for the files, prompts, and references.
 
-## 📸 Preview
+Build with JDK 21+:
 
-![HDSL main UI preview](assets/preview.png)
+```powershell
+.\scripts\build.ps1
+.\scripts\build.ps1 -Package
+```
 
-## Quick start
+Or run `mvn -B -ntp verify`. Real network and UI tests are opt-in. CI does not publish releases.
 
-### Users: download
+The portable package includes corresponding source and build scripts at `sources/hdsl-0.2.0-preview.5-source.zip`.
 
-Grab HDSL-desktop-windows-<version>.zip from the Releases page of this repository, extract it, and run HDSL.exe. The Java runtime and Node toolchain are bundled — no JDK required.
+See the [Chinese guide](docs/USER_GUIDE.md), [accounts and downloads](docs/accounts-and-downloads.md), [validation record](docs/VALIDATION.md), [runtime compatibility](docs/runtime-compatibility.md), [pack support](docs/pack-support.md), and [third-party notices](THIRD_PARTY_NOTICES.md).
 
-### Developers: build from source
-
-Prerequisites: JDK 25.
-
-    & "C:\Program Files\Java\jdk-25.0.2\bin\javac.exe" -encoding UTF-8 -d build\classes src\com\hdsl\Launcher.java
-    & "C:\Program Files\Java\jdk-25.0.2\bin\jar.exe" --create --file build\hdsl-client.jar --main-class com.hdsl.Launcher -C build\classes .
-    & "C:\Program Files\Java\jdk-25.0.2\bin\jpackage.exe" --type app-image --input build --main-jar hdsl-client.jar --main-class com.hdsl.Launcher --name HDSL --dest build\image
-
-Run the smoke tests:
-
-    & "C:\Program Files\Java\jdk-25.0.2\bin\javac.exe" -encoding UTF-8 -cp build\classes -d build\test-classes test\com\hdsl\*.java
-    & "C:\Program Files\Java\jdk-25.0.2\bin\java.exe" -cp build\classes;build\test-classes com.hdsl.SidebarLayoutSmokeTest
-
-## Usage
-
-1. Launch HDSL and create an instance (name + Harness version) in the instance library
-2. Select the instance and start it: HDSL installs that dsh version into runtimes/<version> and initializes a dedicated instances/<id>/workspace and dsh-home
-3. While running, the main UI shows live status and the loopback port; stopping terminates the whole process tree
-4. The Plugins page lets you browse / search / filter plugins; the cache refreshes automatically after add / update / remove
-
-## FAQ
-
-| Issue | Answer |
-|---|---|
-| port occupied | The port is held by an unverified process. HDSL never kills it; end that process manually and retry |
-| Stale plugin list | Ordinary navigation reads the instant cache; background refresh runs on startup, instance switch, plugin changes, instance launch, and manual refresh |
-| Hide official plugins | Use the Hide official plugins toggle on the Plugins page — view-only, does not affect the cache or installs |
-| Do I need Java installed? | No. Packaged builds bundle the runtime; JDK 25 is only needed to build from source |
-| How do I upgrade? | Download the new version ZIP and overwrite the old directory; config / data / instances are preserved |
-| Uninstall | Delete the program directory — nothing is written to the system registry |
-
-## Repository layout
-
-- src/com/hdsl/Launcher.java — single-file desktop client (UI, instances, runtimes, plugins, process control)
-- test/com/hdsl/ — smoke and lifecycle integration tests
-- assets/ — application icon and hero banner
-- VERSION — release version
-
-## Changelog
-
-### v0.1 (2026-08-17) — first public source release
-
-This release includes:
-
-- Unique loopback port per instance, with automatic migration of legacy records
-- Runtime state polling that never blocks the UI; PID + port + workspace ownership verification
-- Full process-tree termination on stop (Windows / Linux)
-- Instant plugin cache with background refresh
-- Plugin search and official-plugin filter
-- Self-contained, version-isolated portable architecture
-
-## Community & feedback
-
-- Issues and suggestions are welcome
-- This repository is tagged with the dsh-plugin topic and can be found on the [GitHub dsh-plugin topic page](https://github.com/topics/dsh-plugin)
-
-## License
-
-This project is licensed under the MIT License (see the LICENSE file). Copyright (c) 2026 jiefing.
-
+This version includes HMCL-derived code and is distributed under GPLv3 or later with HMCL's additional terms. The original HDSL MIT notice is retained. See the [port and source record](docs/HMCL_PORT.md) for the upstream revision and adaptations. Upstream attribution remains visible in the application. No Overture source code is reused. HDSL is not affiliated with DeepSeek or HMCL.

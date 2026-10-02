@@ -1,0 +1,4 @@
+# Preserve the upstream license files exactly, including their original whitespace.
+/LICENSE -text -whitespace
+/LICENSES/** -text -whitespace
+/src/main/resources/com/hdsl/ui/GPL-3.0.txt -text -whitespace

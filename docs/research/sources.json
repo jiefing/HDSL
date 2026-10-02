@@ -1,0 +1,51 @@
+{
+  "checkedOn": "2026-10-02",
+  "workspace": "G:\\WORK\\HDSL",
+  "repositories": [
+    {
+      "name": "HDSL",
+      "path": ".",
+      "url": "https://github.com/jiefing/HDSL",
+      "commit": "bc519f1e7557018d8f9d810ada5d7670583b901e",
+      "branch": "main",
+      "shallow": false,
+      "commitDate": "2026-08-18T13:00:03+08:00"
+    },
+    {
+      "name": "HMCL",
+      "path": "_references/HMCL",
+      "url": "https://github.com/HMCL-dev/HMCL",
+      "commit": "77eee17d361996259a48cc7896006a57d2e34a2a",
+      "branch": "main",
+      "shallow": true,
+      "commitDate": "2026-09-30T20:35:22+08:00"
+    },
+    {
+      "name": "DSH-Melody-Launcher-Overture",
+      "path": "_references/DSH-Melody-Launcher-Overture",
+      "url": "https://github.com/Miyazawai/DSH-Melody-Launcher-Overture",
+      "commit": "9ad2980bf3ddaa91f46bf9bd09cf8ef98af697bc",
+      "branch": "main",
+      "shallow": true,
+      "commitDate": "2026-09-24T16:14:11+08:00"
+    },
+    {
+      "name": "dsh-pack-plugin",
+      "path": "_references/dsh-pack-plugin",
+      "url": "https://github.com/DSH-PackForge/dsh-pack-plugin",
+      "commit": "7c87e8620d9097b7e18f96769af4b3edd98031db",
+      "branch": "master",
+      "shallow": true,
+      "commitDate": "2026-09-28T22:40:50+08:00"
+    },
+    {
+      "name": "DSH-PackForge",
+      "path": "_references/DSH-PackForge",
+      "url": "https://github.com/DSH-PackForge/DSH-PackForge",
+      "commit": "80ffa68da7a1d86e80892d994b65517e397783ba",
+      "branch": "main",
+      "shallow": true,
+      "commitDate": "2026-10-01T14:30:41+08:00"
+    }
+  ]
+}

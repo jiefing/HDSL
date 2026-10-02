@@ -1,0 +1,111 @@
+/* HDSL JavaFX integration rules, 2026-10-02.
+ * The actual HMCL-derived layout rules are in hmcl-root.css and hmcl-blue.css.
+ * Copyright (C) 2026 HDSL contributors; GPL-3.0-or-later. */
+.launcher-root, .launcher-dialog {
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-font-size: 13px;
+    -fx-text-fill: -monet-on-surface;
+    -fx-background-color: -monet-surface;
+    -fx-accent: -monet-primary-container;
+    -fx-focus-color: -monet-primary;
+    -fx-faint-focus-color: #4352A522;
+}
+.label { -fx-text-fill: -monet-on-surface; }
+.launcher-root { -fx-background-color: transparent; }
+.advanced-list-box, .advanced-list-box > .viewport { -fx-background-color: transparent; }
+.advanced-list-box { -fx-background-insets: 0; -fx-padding: 0; -fx-border-width: 0; }
+.advanced-list-item { -fx-cursor: hand; }
+.advanced-list-item:focused > .rippler-container > .container { -fx-background-color: -monet-secondary-container-transparent-50; }
+.advanced-list-item .line-icon { -fx-stroke: -monet-on-surface-variant; }
+.advanced-list-item:selected .line-icon { -fx-stroke: -monet-on-secondary-container; }
+.advanced-list-item .subtitle { -fx-text-fill: -monet-on-surface-variant; }
+.jfx-decorator-title { -fx-font-size: 14; }
+.jfx-decorator-button { -fx-background-color: transparent; -fx-background-radius: 0; -fx-padding: 0; -fx-font-size: 22; -fx-text-fill: -monet-on-surface; }
+.jfx-decorator-button:hover { -fx-background-color: #00000015; }
+.jfx-tool-bar .label, .jfx-tool-bar .jfx-decorator-button { -fx-text-fill: -monet-on-primary-container; }
+.jfx-tool-bar .progress-indicator { -fx-progress-color: -monet-on-primary-container; }
+.window-glyph { -fx-fill: transparent; -fx-stroke: -monet-on-primary-container; -fx-stroke-width: 1.2; }
+#window-close:hover { -fx-background-color: #E81123; -fx-text-fill: white; }
+.window-task-status { -fx-padding: 0 10 0 8; }
+.footer-status { -fx-font-size: 10; -fx-text-fill: -monet-on-surface-variant; }
+.launch-pane > .jfx-button { -fx-padding: 0; -fx-background-insets: 0; }
+.launch-pane > .jfx-button:hover { -fx-background-color: derive(-monet-primary-container, -8%); }
+.launch-pane > .jfx-button:disabled { -fx-background-color: derive(-monet-primary-container, 15%); }
+.first-launch-note { -fx-font-size: 11; -fx-text-fill: -monet-on-surface-variant; -fx-padding: 12; }
+.home-task-panel { -fx-padding: 12 16; }
+.task-heading { -fx-font-weight: bold; -fx-font-size: 13; }
+.task-elapsed { -fx-text-fill: -monet-on-surface-variant; -fx-font-size: 11; }
+.task-phase { -fx-font-size: 12; }
+.primary-button, .secondary-button, .subtle-button { -fx-background-radius: 4; -fx-padding: 7 12; -fx-font-size: 12; -fx-cursor: hand; }
+.primary-button { -fx-background-color: -monet-primary-container; -fx-text-fill: -monet-on-primary-container; }
+.primary-button:hover { -fx-background-color: derive(-monet-primary-container, -8%); }
+.primary-button .line-icon { -fx-stroke: -monet-on-primary-container; }
+.secondary-button { -fx-background-color: -monet-secondary-container-transparent-50; -fx-text-fill: -monet-on-secondary-container; }
+.secondary-button:hover { -fx-background-color: -monet-secondary-container-transparent-80; }
+.subtle-button { -fx-background-color: transparent; -fx-text-fill: -monet-primary; }
+.subtle-button:hover { -fx-background-color: #0000000C; }
+.line-icon { -fx-stroke: -monet-on-surface-variant; }
+.button:disabled, .combo-box:disabled { -fx-opacity: .55; }
+.content-card { -fx-padding: 14 16; }
+.selected-card { -fx-border-color: -monet-primary-transparent-50; -fx-border-radius: 4; }
+.section-title, .card-title { -fx-font-size: 13; -fx-font-weight: bold; }
+.muted-label { -fx-font-size: 12; -fx-text-fill: -monet-on-surface-variant; -fx-line-spacing: 3; }
+.path-label, .small-muted, .eyebrow { -fx-font-size: 10; -fx-text-fill: -monet-on-surface-variant; }
+.badge { -fx-font-size: 10; -fx-padding: 3 7; -fx-background-radius: 4; }
+.badge-green { -fx-background-color: #D4E9D4; -fx-text-fill: #28512D; }
+.badge-gray { -fx-background-color: -monet-surface-container-high; -fx-text-fill: -monet-on-surface-variant; }
+.badge-blue { -fx-background-color: -monet-secondary-container; -fx-text-fill: -monet-on-secondary-container; }
+.note-card { -fx-background-color: -monet-surface-container-low-transparent-80; -fx-background-radius: 4; -fx-padding: 12 16; }
+.note-title { -fx-font-size: 12; -fx-font-weight: bold; -fx-text-fill: -monet-on-surface-variant; }
+.empty-card { -fx-background-color: -monet-surface-container-low-transparent-80; -fx-background-radius: 4; -fx-padding: 28; }
+.field-label { -fx-font-size: 12; -fx-text-fill: -monet-on-surface-variant; }
+.background-choice { -fx-background-color: transparent; -fx-background-radius: 4; -fx-border-color: transparent; -fx-border-radius: 4; -fx-border-width: 2; -fx-padding: 4; -fx-cursor: hand; }
+.background-choice:hover { -fx-background-color: -monet-secondary-container-transparent-50; }
+.background-choice:selected { -fx-background-color: -monet-secondary-container-transparent-50; -fx-border-color: -monet-primary-container; }
+.background-thumbnail { -fx-background-color: -monet-surface-container-high; -fx-background-radius: 2; }
+.background-choice-label { -fx-font-size: 11; }
+.text-field, .combo-box {
+    -fx-background-color: -monet-surface-container-lowest;
+    -fx-background-radius: 3;
+    -fx-border-color: -monet-outline-variant;
+    -fx-border-radius: 3;
+    -fx-padding: 7 9;
+    -fx-text-fill: -monet-on-surface;
+    -fx-prompt-text-fill: #8B8B96;
+}
+.text-field:focused, .combo-box:focused { -fx-border-color: -monet-primary; }
+.combo-box { -fx-padding: 0 2; -fx-min-height: 34; }
+.combo-box .list-cell { -fx-text-fill: -monet-on-surface; -fx-padding: 7 9; }
+.combo-box .text-field { -fx-border-color: transparent; -fx-background-color: transparent; -fx-padding: 7 9; }
+.combo-box-popup .list-view { -fx-background-color: -monet-surface; -fx-border-color: -monet-outline-variant; }
+.combo-box-popup .list-view .list-cell:hover { -fx-background-color: -monet-surface-container-high; }
+.combo-box-popup .list-view .list-cell:selected { -fx-background-color: -monet-secondary-container; }
+.page-scroll > .viewport { -fx-background-color: transparent; }
+.page-scroll { -fx-background-insets: 0; -fx-padding: 0; -fx-border-width: 0; }
+.scroll-bar:vertical { -fx-background-color: transparent; -fx-pref-width: 8; }
+.scroll-bar:horizontal { -fx-background-color: transparent; -fx-pref-height: 8; }
+.scroll-bar .thumb { -fx-background-color: #BCBCBC; -fx-background-radius: 1; }
+.scroll-bar .track { -fx-background-color: transparent; }
+.scroll-bar .increment-button, .scroll-bar .decrement-button { -fx-background-color: transparent; -fx-padding: 0; }
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow { -fx-background-color: transparent; -fx-padding: 0; }
+.log-area { -fx-font-family: "Consolas"; -fx-font-size: 12; -fx-text-fill: #222222; -fx-background-color: #FFFFFFCC; -fx-padding: 1; -fx-border-width: 0; }
+.log-area .content { -fx-background-color: #FFFFFFCC; -fx-padding: 12; }
+.log-area .viewport { -fx-background-color: transparent; }
+.preview-area { -fx-font-family: "Consolas"; -fx-font-size: 12; }
+.preview-area .content { -fx-background-color: -monet-surface; -fx-padding: 12; }
+.validation-error { -fx-text-fill: -monet-error; -fx-font-size: 11; }
+.launcher-dialog { -fx-padding: 15; }
+.launcher-dialog .header-panel { -fx-background-color: -monet-surface; }
+.launcher-dialog > .button-bar > .container { -fx-padding: 16 0 0 0; }
+.launcher-dialog .button { -fx-background-radius: 4; -fx-padding: 7 15; }
+.launcher-dialog .content.label { -fx-wrap-text: true; }
+.separator .line { -fx-border-color: -monet-outline-variant transparent transparent transparent; -fx-border-width: 1 0 0 0; }
+.tooltip { -fx-font-family: "Microsoft YaHei UI"; -fx-font-size: 12; -fx-background-color: -monet-inverse-surface; -fx-text-fill: -monet-inverse-on-surface; }
+.download-tabs > .tab-header-area { -fx-padding: 0 10 0 10; }
+.download-tabs > .tab-header-area > .tab-header-background { -fx-background-color: -monet-surface; }
+.download-tabs > .tab-header-area > .headers-region > .tab { -fx-background-color: transparent; -fx-padding: 11 25; -fx-background-insets: 0; -fx-border-width: 0 0 3 0; -fx-border-color: transparent; }
+.download-tabs > .tab-header-area > .headers-region > .tab:selected { -fx-border-color: transparent transparent -monet-primary transparent; }
+.download-tabs .tab-label { -fx-text-fill: -monet-on-surface; -fx-font-size: 13; }
+.download-tabs .tab:selected .tab-label { -fx-text-fill: -monet-primary; }
+.download-tabs .tab .focus-indicator { -fx-border-width: 0; }
+.download-tabs .page-scroll { -fx-background-color: transparent; }
