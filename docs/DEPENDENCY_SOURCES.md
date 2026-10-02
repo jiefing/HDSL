@@ -1,10 +1,10 @@
 # 运行环境与对应源码
 
-HDSL `v0.2.0-preview.5` 的 Windows x64 便携包使用下列固定版本。本页列出的源码附件和 SHA-256 文件与便携包一起提供于 [GitHub 发行页面](https://github.com/jiefing/HDSL/releases/tag/v0.2.0-preview.5)。下载并使用启动器只需 Windows 便携 ZIP；源码附件供查阅、构建和再分发使用。
+HDSL `v0.2.0` 的 Windows x64 便携包使用下列固定版本。本页列出的源码附件和 SHA-256 文件与便携包一起提供于 [GitHub 发行页面](https://github.com/jiefing/HDSL/releases/tag/v0.2.0)。下载并使用启动器只需 Windows 便携 ZIP；源码附件供查阅、构建和再分发使用。
 
 ## HDSL
 
-- 修改后的完整应用源码、资源、测试、构建脚本及许可证：`hdsl-0.2.0-preview.5-source.zip`。
+- 修改后的完整应用源码、资源、测试、构建脚本及许可证：`hdsl-0.2.0-source.zip`。
 - 同一源码包也在便携包的 `sources/` 下；其 SHA-256 保存在 `build-info.json` 和相邻 `.sha256` 文件。
 - 许可：GPL-3.0-or-later 及 HMCL 附加条款；原 HDSL MIT 声明保留。详见 [第三方声明](../THIRD_PARTY_NOTICES.md)。
 

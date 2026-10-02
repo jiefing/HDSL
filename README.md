@@ -1,8 +1,8 @@
 # HDSL — Hello DeepSeek Harness Launcher
 
-**0.2.0-preview.5 · 预发布版。**
+**HDSL 0.2.0**
 
-[下载 Windows x64 便携包及源码](https://github.com/jiefing/HDSL/releases/tag/v0.2.0-preview.5)。解压后运行 `HDSL.exe`，请保留整个目录。
+[下载 Windows x64 便携包及源码](https://github.com/jiefing/HDSL/releases/tag/v0.2.0)。解压后运行 `HDSL.exe`，请保留整个目录。
 
 用于 Windows 的 DeepSeek Harness 启动器。新版直接移植并适配 HMCL 的 JavaFX 窗口框架、侧栏、列表控件和首页启动区域，接入 Harness 实例、运行时、整合包、插件及任务管理。
 
@@ -55,11 +55,11 @@
 .\scripts\build.ps1 -Package
 ```
 
-脚本按固定版本下载并校验 Maven；打包使用 `jpackage`，带 Java 运行环境、Node 和 pnpm，并附上对应源码与构建脚本：`sources/hdsl-0.2.0-preview.5-source.zip`。也可以使用已安装的 Maven：
+脚本按固定版本下载并校验 Maven；打包使用 `jpackage`，带 Java 运行环境、Node 和 pnpm，并附上对应源码与构建脚本：`sources/hdsl-0.2.0-source.zip`。也可以使用已安装的 Maven：
 
 ```powershell
 mvn -B -ntp verify
-java '-Dhdsl.data=.run-data' -jar target/hdsl-0.2.0-preview.5.jar
+java '-Dhdsl.data=.run-data' -jar target/hdsl-0.2.0.jar
 ```
 
 源码运行时需在数据目录准备 `tools/node` 和 `tools/pnpm`，或通过 PATH 提供相应工具。联网安装和真实 UI 验证为独立测试，默认普通构建不运行。CI 只构建和测试，不自动发布。

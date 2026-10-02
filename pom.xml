@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.hdsl</groupId><artifactId>hdsl</artifactId><version>0.2.0-preview.5</version>
+  <groupId>com.hdsl</groupId><artifactId>hdsl</artifactId><version>0.2.0</version>
   <name>HDSL</name><description>Portable DeepSeek Harness launcher</description>
   <licenses><license><name>GNU GPL version 3 or later, with HMCL section 7 additional terms</name><url>https://github.com/HMCL-dev/HMCL#license</url><distribution>repo</distribution></license></licenses>
   <properties><maven.compiler.release>21</maven.compiler.release><project.build.sourceEncoding>UTF-8</project.build.sourceEncoding><javafx.version>21.0.8</javafx.version><hdsl.buildDirectory>target</hdsl.buildDirectory></properties>

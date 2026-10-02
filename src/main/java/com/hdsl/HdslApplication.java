@@ -18,7 +18,7 @@ public final class HdslApplication extends Application {
     @Override public void start(Stage stage){
         try{
             Path root=dataRoot();controller=new Controller(root);ShellView shell=new ShellView(controller);
-            Scene scene=new Scene(shell.view(),1180,760);stage.setTitle("HDSL · Hello DeepSeek Harness Launcher · 0.2.0-preview.5");stage.setMinWidth(960);stage.setMinHeight(650);stage.setScene(scene);shell.configureStage(stage);
+            Scene scene=new Scene(shell.view(),1180,760);stage.setTitle("HDSL · Hello DeepSeek Harness Launcher · 0.2.0");stage.setMinWidth(960);stage.setMinHeight(650);stage.setScene(scene);shell.configureStage(stage);
             var icon=HdslApplication.class.getResource("/com/hdsl/ui/icons/hdsl.png");if(icon!=null)stage.getIcons().add(new javafx.scene.image.Image(icon.toExternalForm()));
             shell.render(controller.snapshot());stage.show();
             AtomicBoolean polling=new AtomicBoolean();

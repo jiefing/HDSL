@@ -1,4 +1,4 @@
-# HDSL 0.2.0-preview.5 验证记录
+# HDSL 0.2.0 验证记录
 
 日期：2026-10-02。环境：Windows x64、JDK 21、Node 24.21.0、pnpm 10.34.0。本文记录发布前的本机验证；GitHub CI 结果见仓库的 Actions 页面。
 

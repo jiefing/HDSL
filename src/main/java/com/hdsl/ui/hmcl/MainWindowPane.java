@@ -164,7 +164,7 @@ public final class MainWindowPane extends StackPane {
         backButton.setManaged(!home);
         title.setPadding(new javafx.geometry.Insets(0, 0, 0, home ? 12 : 0));
         title.setGraphic(home ? homeIcon : null);
-        title.setText("HDSL 0.2.0-preview.5" + (home ? "" : "  /  " + page));
+        title.setText("HDSL 0.2.0" + (home ? "" : "  /  " + page));
     }
 
     public void setBackgroundPath(String path) {

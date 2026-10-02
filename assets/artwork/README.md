@@ -34,7 +34,7 @@
 
 - `src/main/resources/com/hdsl/ui/icons/hdsl.png` 是图标原图的逐字节副本，用于界面头像与窗口图标。
 - `assets/HDSL.ico` 由 `scripts/build-icon.ps1` 从图标原图转换，包含 16、24、32、48、64、128、256 像素尺寸；转换只做缩放与格式导出。
-- 便携包的对应源码位于 `sources/hdsl-0.2.0-preview.5-source.zip`，其中包含本记录、素材及转换脚本。
+- 便携包的对应源码位于 `sources/hdsl-0.2.0-source.zip`，其中包含本记录、素材及转换脚本。
 
 这些具体图片是本轮为 HDSL 生成的素材，不是 HMCL 资产或 DeepSeek 官方形象。
 

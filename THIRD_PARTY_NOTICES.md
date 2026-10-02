@@ -1,6 +1,6 @@
 # 许可与第三方声明 / License and third-party notices
 
-HDSL 0.2.0-preview.5 包含从 Hello Minecraft! Launcher（HMCL）移植并修改的 JavaFX 界面代码。组合后的 HDSL 程序按 **GNU GPL 第 3 版或任何后续版本**发布，并遵守 HMCL 的附加条款。GPL 全文见根目录 [LICENSE](LICENSE)（Windows 包中为 `LICENSE-HDSL.txt`），附加条款见 [LICENSES/HMCL-ADDITIONAL-TERMS.md](LICENSES/HMCL-ADDITIONAL-TERMS.md)。
+HDSL 0.2.0 包含从 Hello Minecraft! Launcher（HMCL）移植并修改的 JavaFX 界面代码。组合后的 HDSL 程序按 **GNU GPL 第 3 版或任何后续版本**发布，并遵守 HMCL 的附加条款。GPL 全文见根目录 [LICENSE](LICENSE)（Windows 包中为 `LICENSE-HDSL.txt`），附加条款见 [LICENSES/HMCL-ADDITIONAL-TERMS.md](LICENSES/HMCL-ADDITIONAL-TERMS.md)。
 
 HDSL includes modified JavaFX interface code from HMCL. The combined application is distributed under **GPL-3.0-or-later**, with HMCL's additional terms: distinguish modified distributions by name or version, and retain the copyright notice displayed in the application. See the full license and additional terms above. HDSL is a separate modified product and is not an official HMCL release.
 
@@ -40,7 +40,7 @@ The public Windows package uses Eclipse Temurin OpenJDK 21.0.12.1+1, under GPLv2
 
 ## 源码与外部程序 / Source and external programs
 
-Windows 包附本版本对应源码：`sources/hdsl-0.2.0-preview.5-source.zip`，包含修改后的程序、资源、构建脚本和许可说明。嵌入 JAR 的许可文档不能替代完整对应源码包。后续分发修改版时应同步提供对应版本的完整源码；仅提供 HMCL 上游地址不足以提供 HDSL 修改部分。
+Windows 包附本版本对应源码：`sources/hdsl-0.2.0-source.zip`，包含修改后的程序、资源、构建脚本和许可说明。嵌入 JAR 的许可文档不能替代完整对应源码包。后续分发修改版时应同步提供对应版本的完整源码；仅提供 HMCL 上游地址不足以提供 HDSL 修改部分。
 
 The Windows package includes the corresponding HDSL source and build scripts at the path above. Keep the source archive aligned with the binaries when redistributing a modified build.
 

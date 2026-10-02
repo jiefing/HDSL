@@ -777,8 +777,8 @@ public final class ShellView {
                 "正在保存设置…", result -> settingsDirty = false));
         VBox about = card();
         about.setId("about-hmcl");
-        Label copyright = paragraph("界面改编自 Hello Minecraft! Launcher\n版权所有 © 2013-2026 huangyuhui 及贡献者\nHDSL 0.2.0-preview.5 · Copyright (c) 2026 jiefing · GPLv3 或后续版本");
-        Label sourceNotice = paragraph("HDSL 保留上游可见版权，并以独立名称和版本区别于原版。\n随包源码：sources/hdsl-0.2.0-preview.5-source.zip");
+        Label copyright = paragraph("界面改编自 Hello Minecraft! Launcher\n版权所有 © 2013-2026 huangyuhui 及贡献者\nHDSL 0.2.0 · Copyright (c) 2026 jiefing · GPLv3 或后续版本");
+        Label sourceNotice = paragraph("HDSL 保留上游可见版权，并以独立名称和版本区别于原版。\n随包源码：sources/hdsl-0.2.0-source.zip");
         sourceNotice.getStyleClass().add("small-muted");
         Button license = new Button("查看 GPL 许可");
         license.getStyleClass().add("subtle-button");

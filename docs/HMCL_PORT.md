@@ -1,6 +1,6 @@
 # HMCL 界面移植与许可记录 / HMCL port record
 
-记录日期：2026-10-02。界面移植始于 HDSL 0.2.0-preview.2，本记录更新至 0.2.0-preview.5。
+记录日期：2026-10-02。界面移植始于 HDSL 0.2.0-preview.2，本记录更新至 0.2.0。
 
 ## 来源与适用许可
 
@@ -70,7 +70,7 @@ The excluded wallpaper has an upstream history and a later original-image backup
 ## 分发、源码与验证
 
 - 许可全文、原 MIT 声明、HMCL 附加条款和第三方声明随源代码与 Windows 包保留，并嵌入应用 JAR 的 `META-INF/`。
-- Windows 包附 `sources/hdsl-0.2.0-preview.5-source.zip`，包含对应修改源码、资源、构建脚本、测试和许可文件。以打包后的 `build-info.json` 中 `sourceSha256` 核对实际源码包。
+- Windows 包附 `sources/hdsl-0.2.0-source.zip`，包含对应修改源码、资源、构建脚本、测试和许可文件。以打包后的 `build-info.json` 中 `sourceSha256` 核对实际源码包。
 - 完整对应源码必须对应所分发的二进制与修改；HMCL 上游链接用于溯源，不能替代 HDSL 自身对应源码。参考仓库、下载的测试整合包、用户实例和凭据不纳入源码包。
 - 第三方库和独立运行环境保留其原有许可；见 [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md)。公开便携包使用 Eclipse Temurin OpenJDK 21.0.12.1+1，并随发行提供该运行环境与 OpenJFX 的完整对应源码，来源及校验记录见 [DEPENDENCY_SOURCES.md](DEPENDENCY_SOURCES.md)。
 - 本记录完成了文本、来源与文件头核查。实际窗口、打包后的许可入口、资源和源码包的检查结果由发布验收记录另行给出。

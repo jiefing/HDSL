@@ -1,8 +1,8 @@
 # HDSL — Hello DeepSeek Harness Launcher
 
-Version **0.2.0-preview.5** is a prerelease.
+**HDSL 0.2.0**
 
-[Download the Windows x64 portable package and source](https://github.com/jiefing/HDSL/releases/tag/v0.2.0-preview.5). Extract the archive and run `HDSL.exe`; keep the full directory together.
+[Download the Windows x64 portable package and source](https://github.com/jiefing/HDSL/releases/tag/v0.2.0). Extract the archive and run `HDSL.exe`; keep the full directory together.
 
 A Windows launcher with a JavaFX interface ported and adapted from HMCL, isolated Harness instances, exact runtime versions, plugin management, task logs, and PackForge/Overture pack import. The port includes the window frame, sidebar, list controls, and home launch area.
 
@@ -31,7 +31,7 @@ Build with JDK 21+:
 
 Or run `mvn -B -ntp verify`. Real network and UI tests are opt-in. CI does not publish releases.
 
-The portable package includes corresponding source and build scripts at `sources/hdsl-0.2.0-preview.5-source.zip`.
+The portable package includes corresponding source and build scripts at `sources/hdsl-0.2.0-source.zip`.
 
 See the [Chinese guide](docs/USER_GUIDE.md), [accounts and downloads](docs/accounts-and-downloads.md), [validation record](docs/VALIDATION.md), [runtime compatibility](docs/runtime-compatibility.md), [pack support](docs/pack-support.md), and [third-party notices](THIRD_PARTY_NOTICES.md).
 
